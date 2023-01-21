@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
         "test:all": "yarn playwright test",
-        "codegen": "yarn playwright codegen",
         "prepare": "husky install",
         "lint": "eslint . --ext .ts --max-warnings=0",
         "prettify": "prettier . --write --ignore-unknown"
