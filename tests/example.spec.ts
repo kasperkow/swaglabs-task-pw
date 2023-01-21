@@ -1,5 +1,5 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test'
 
-test("true", async ({ page }) => {
-  expect(true).toBeTruthy();
-});
+test('true', async ({ page }) => {
+    expect(true).toBeTruthy()
+})

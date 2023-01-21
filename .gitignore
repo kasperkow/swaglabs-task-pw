@@ -1,4 +1,17 @@
+# OSX
+.DS_Store
+
+# Environment variables file
+.env
+
+# Dependency directories
 node_modules/
+
+# VSC
+.vscode
+
+# Playwright
 /test-results/
-/playwright-report/
 /playwright/.cache/
+*StorageState.json
+
