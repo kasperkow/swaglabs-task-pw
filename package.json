@@ -1,0 +1,21 @@
+{
+  "name": "swaglabs-task-pw",
+  "version": "1.0.0",
+  "description": "https://www.saucedemo.com/ Playwright Tests",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasperkow/swaglabs-task-pw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasperkow/swaglabs-task-pw/issues"
+  },
+  "homepage": "https://github.com/kasperkow/swaglabs-task-pw#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}
