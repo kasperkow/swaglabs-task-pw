@@ -53,8 +53,8 @@ test.describe('Products page', () => {
     test('There should be visible main elements', async ({ page }) => {
         productsPage = new ProductsPage(page)
         const importantElementList = [
-            productsPage.logoImg.locator('span'),
-            productsPage.productsList.locator('span'),
+            productsPage.logoImg,
+            productsPage.productsList,
             productsPage.shoppingCartLink,
             productsPage.footerSocialList,
         ]
