@@ -52,11 +52,18 @@ test.describe('Products page', () => {
 
     test('There should be visible main elements', async ({ page }) => {
         productsPage = new ProductsPage(page)
-        await expect.soft(productsPage.logoImg).toBeVisible()
-        await expect.soft(productsPage.productsList).toBeVisible()
+        const importantElementList = [
+            productsPage.logoImg.locator('span'),
+            productsPage.productsList.locator('span'),
+            productsPage.shoppingCartLink,
+            productsPage.footerSocialList,
+        ]
+        for (const element of importantElementList) {
+            await test.step(`Visibility of: ${element}`, async () => {
+                await expect.soft(element).toBeVisible()
+            })
+        }
         await expect.soft(productsPage.productsListItem).toHaveCount(6)
-        await expect.soft(productsPage.shoppingCartLink).toBeVisible()
-        await expect.soft(productsPage.footerSocialList).toBeVisible()
         await expect.soft(productsPage.footerSocialList.locator('li')).toHaveCount(3)
     })
 })
