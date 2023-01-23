@@ -1,4 +1,5 @@
 # Welcome 👋
+[![Playwright Tests](https://github.com/kasperkow/swaglabs-task-pw/actions/workflows/playwright.yml/badge.svg)](https://github.com/kasperkow/swaglabs-task-pw/actions/workflows/playwright.yml)
 
 Hi! It's a repository with Playwright tests for the saucedemo.com website.
 I wanted to present the different techniques and options used to create E2E tests. Therefore, the way of finding locators, as well as the tests themselves, may be inconsistent and not present the most important of the most critical tests.
@@ -6,9 +7,9 @@ I wanted to present the different techniques and options used to create E2E test
 ## How to run tests 🚀
 
 ```
-Yarn
+yarn
 cp .env.default .env
-Yarn run test:all
+yarn run test:all
 ```
 
 ## What I've done ⭐️
